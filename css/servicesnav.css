@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 :root{
-    --green:#356d80;
+    --green:linear-gradient(to right,#356d80, #66757a);
     --dark-color:#444646;
-    --black:#444;
+    --black:#444; 
     --light-color:#666;
     --border:.1rem solid rgba(0,0,0,.1);
     --border-hover:.1rem solid var(--black);
