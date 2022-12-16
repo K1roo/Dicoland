@@ -285,7 +285,7 @@ section{
 }
 
 .home{
-    background: url(../image/banner-bg.jpg) no-repeat;
+    background: url(../index_images/banner-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -453,7 +453,7 @@ section{
 }
 
 .newsletter{
-    background:url(../index-image/letter-bg.jpg) no-repeat;
+    background:url(../index_images/letter-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

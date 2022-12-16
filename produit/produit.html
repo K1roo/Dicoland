@@ -23,31 +23,31 @@
         <div class = "product-imgs">
           <div class = "img-display">
             <div class = "img-showcase">
-              <img src = "produit_images/book-10.png" alt = "book image">
-              <img src = "produit_images/book-3.png" alt = "book image">
-              <img src = "produit_images/book-3.png" alt = "book image">
-              <img src = "produit_images/book5.png" alt = "book image">
+              <img src = "/produit_images/book-10.png" alt = "book image">
+              <img src = "/produit_images/book-3.png" alt = "book image">
+              <img src = "/produit_images/book-3.png" alt = "book image">
+              <img src = "/produit_images/book5.png" alt = "book image">
             </div>
           </div>
           <div class = "img-select">
             <div class = "img-item">
               <a href = "#" data-id = "1">
-                <img src = "produit_images/book-10.png" alt = "book image">
+                <img src = "/produit_images/book-10.png" alt = "book image">
               </a>
             </div>
             <div class = "img-item">
               <a href = "#" data-id = "2">
-                <img src = "produit_images/book-3.png" alt = "book image">
+                <img src = "/produit_images/book-3.png" alt = "book image">
               </a>
             </div>
             <div class = "img-item">
               <a href = "#" data-id = "3">
-                <img src = "produit_images/book-3.png" alt = "book image">
+                <img src = "/produit_images/book-3.png" alt = "book image">
               </a>
             </div>
             <div class = "img-item">
               <a href = "#" data-id = "4">
-                <img src = "produit_images/book5.png" alt = "book image">
+                <img src = "/produit_images/book5.png" alt = "book image">
               </a>
             </div>
           </div>
@@ -86,6 +86,9 @@
             <button type = "button" class = "btn">
               Ajouter au panier <i class = "fas fa-shopping-cart"></i>
             </button>
+            <button type = "button" class = "btn">
+              revenir  <i class = "fas fa-arrow-alt-circle-left"></i>
+            </button>
           </div>
 
           <div class = "social-links">
@@ -109,4 +112,21 @@
     
     <script src="/js/produitscript.js"></script>
   </body>
+  <footer>
+    <head>
+      <link rel="stylesheet" href="/css/footerstyle.css">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+    <body>
+    
+      <div id="footer">
+    
+      </div>
+      <script>
+        $(function(){
+          $("#footer").load("/footer/footer.html");
+        });
+        </script>
+    </body>
+      </footer>
 </html>

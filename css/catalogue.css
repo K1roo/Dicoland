@@ -106,7 +106,7 @@ img{
     transition: all 0.6s ease;
 }
 .btn-cart{
-    background: black;
+    background: rgb(114, 111, 111);
     color: white;
 }
 .btn-cart:hover{
