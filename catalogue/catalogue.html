@@ -6,9 +6,15 @@
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/css/catalogue.css">
+        <link rel="stylesheet" href="/css/test.css">
         <!-- font awesome -->
         <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    
+    
     </head>
     
     <body>
@@ -30,41 +36,51 @@ $(function(){
                 <div class = "product-items">
                     <!-- single product -->
                     <div class = "product">
-                        <div class = "product-content">
+                         <div class = "product-content">
+                            <center> <h1>Titre livre</h1> </center>
                             <div class = "product-img">
-                                <img src = "/catalogue_images/book-1.png" alt = "product image">
+                                <img src = "/catalogue_images/book-1.png" alt = "product image"> 
                             </div>
-
-
-                            <div class = "product-btns">
-                                <a href="produit/produit.html">
-                                <button class = "btn-cart"> Consulter
-                                    <span><i class = "fas fa-eye"></i></span>
+                            
+                            <!--<a  type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            </div>
+                          </button>
+                          
+                          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
                                 </button>
+                              </div>
+                              <div class="modal-body">
+                                <iframe src="produit/produit.html" left="-50px" margin="-50px" width="470" height="570"> 
+                              </div>
+                            </div> -->
+
+                            <button  type="button" class="btn-cart" data-toggle="modal" data-target="#exampleModal">
+                                Consulter
+                                <span><i class = "fas fa-eye"></i></span>
+                               </button> 
+                                    
+                                </button>
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+
+                                        </div>
+                                        <div class="modal-body">
+                                          <iframe src="/produit/produit.html" left="-50px" margin="-50px" width="470" height="570"> 
+                                        </div>
                             </a>
                             </div>
-                        </div>
+                                    </div>
 
-                        <div class = "product-info">
-                            <div class = "product-info-top">
-                                <h2 class = "sm-title">Catalog du livre --------------------------</h2>
-                                <div class = "rating">
-                                    <span><i class = "fas fa-star"></i></span>
-                                    <span><i class = "fas fa-star"></i></span>
-                                    <span><i class = "fas fa-star"></i></span>
-                                    <span><i class = "fas fa-star"></i></span>
-                                    <span><i class = "far fa-star"></i></span>
-                                </div>
-                            </div>
-                            <a href = "#" class = "product-name">livre titre </a>
-                            <p class = "product-price"> 150.00€</p>
-                            <p class = "product-price">  133.00 €</p>
-                        </div>
-
-                        <div class = "off-info">
-                            <h2 class = "sm-title">text ici si on veut </h2>
-                        </div>
-                    </div>
                     <!-- end of single product -->
                     <div class = "product">
                         <div class = "product-content">
