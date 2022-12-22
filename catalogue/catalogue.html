@@ -6,7 +6,6 @@
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/css/catalogue.css">
-        <link rel="stylesheet" href="/css/test.css">
         <!-- font awesome -->
         <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -24,10 +23,11 @@
 
 <script>
 $(function(){
-  $("#nav-placeholder").load("/catalogue/cataloguenavbar.html");
+    $("#nav-placeholder").load("/header/header.html");
 });
 </script>
 <!--end of Navigation bar-->
+<header>
         <div class = "products">
             <div class = "container">
                 <h1 class = "lg-title">Catalogue</h1>
@@ -41,30 +41,13 @@ $(function(){
                             <div class = "product-img">
                                 <img src = "/catalogue_images/book-1.png" alt = "product image"> 
                             </div>
-                            
-                            <!--<a  type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                            </div>
-                          </button>
-                          
-                          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <div class="modal-body">
-                                <iframe src="produit/produit.html" left="-50px" margin="-50px" width="470" height="570"> 
-                              </div>
-                            </div> -->
-
                             <button  type="button" class="btn-cart" data-toggle="modal" data-target="#exampleModal">
                                 Consulter
                                 <span><i class = "fas fa-eye"></i></span>
-                               </button> 
-                                    
-                                </button>
+                               </button>                                     
+                            </button>
+                            </header>
+                            
                                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                       <div class="modal-content">
