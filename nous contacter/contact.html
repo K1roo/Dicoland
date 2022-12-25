@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            contact form
+        </title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>
+                form
+            </h1>
+            <form action="https://formspree.io/f/xzbqpyqy" method="POST">
+                <input type="text" name="Name"   placeholder="your name" required>
+                <br>
+                <input type="email" name="email"  placeholder="your email" required><br>
+                <input type="hidden" name="Suject" value="New submission!">
+                <select name="continent">
+                    <option> paris </option>
+                    <option> germany </option>
+                    </select>
+                <textarea name="message"  placeholder="message" required></textarea>
+                <button type="submit"> send </button>
+    
+            </form>
+        </div>
+    </body>
+</html>
