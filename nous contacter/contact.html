@@ -1,33 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            contact form
-        </title>
-        <link rel="stylesheet" href="./style.css">
-    </head>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  <body>
+    <div id="nav-placeholder">
 
-    <body>
-        <div class="container">
-            <h1>
-                form
-            </h1>
-            <form action="https://formspree.io/f/xzbqpyqy" method="POST">
-                <input type="text" name="Name"   placeholder="your name" required>
-                <br>
-                <input type="email" name="email"  placeholder="your email" required><br>
-                <input type="hidden" name="Suject" value="New submission!">
-                <select name="continent">
-                    <option> paris </option>
-                    <option> germany </option>
-                    </select>
-                <textarea name="message"  placeholder="message" required></textarea>
-                <button type="submit"> send </button>
+    </div>
+    <script>
+      $(function(){
+        $("#nav-placeholder").load("/header/header.html");
+      });
+      </script>
+   <div>
+
+<div class="contact-container">
+    <div class="left-col">
+    </div>
+    <div class="right-col">
+
+  <link rel="stylesheet" href="/css/contact.css">
+      <h1>Nous contacter</h1>
     
-            </form>
-        </div>
+      <form action="https://formspree.io/f/xzbqpyqy" method="POST">
+        <label for="name">Nom</label>
+    <input type="text" id="name" name="Nom" placeholder="" required>
+    <label for="name">Prenom</label>
+    <input type="text" id="name" name="Prenom" placeholder="" required>
+        <label  for="email">Email Address</label>
+    <input type="email" id="email" name="Adresse email" placeholder="" required>
+    <label for="email">Titre</label>
+    <input type="text" id="title" name="Titre" placeholder="" required>
+        <label for="message">Message</label>
+    <textarea rows="6" placeholder="" id="Message" name="message" required></textarea>
+    <button type="submit" id="submit" name="">Envoyer</button>
+    
+    
+  </form>
+  
+    </div>
+    
+
+  </div>
+  </body>
+
+  <footer>
+    <head>
+      <link rel="stylesheet" href="/css/footerstyle.css">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+    <body>
+    
+      <div id="footer">
+    
+      </div>
+      <script>
+        $(function(){
+          $("#footer").load("/footer/footer.html");
+        });
+        </script>
     </body>
+      </footer>
+      <!-- start of snow code -->
+<body>
+
+  <div id="snow">
+
+  </div>
+
+
+      <script>
+        $(function(){
+          $("#snow").load("/snow/snow.html");
+        });
+        </script>
+</body>
 </html>
+  
