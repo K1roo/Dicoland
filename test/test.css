@@ -10,7 +10,7 @@ nav{
   z-index: 99;
   width: 100%;
   
-  background: #242526;
+  background: linear-gradient(to right,#356d80, #356d80, #111010);
 }
 nav .wrapper{
   position: relative;
@@ -52,7 +52,7 @@ nav .wrapper{
 }
 .nav-links .drop-menu{
   position: absolute;
-  background: #242526;
+  background:linear-gradient(to right,#356d80,  #080808);
   width: 180px;
   line-height: 45px;
   top: 85px;
@@ -84,7 +84,7 @@ nav .wrapper{
   visibility: hidden;
 }
 .mega-box .content{
-  background: #242526;
+  background:linear-gradient(to right,#356d80, #080808);
   padding: 25px 20px;
   display: flex;
   width: 100%;
