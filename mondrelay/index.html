@@ -1,0 +1,64 @@
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" dir="ltr">
+
+  <head>
+    <title>Exemple Widget Mondial Relay</title>
+
+    <!-- Librairie jQuery, facilitant la programmation de scripts côté client.
+Cette librairie est requise par le widget Mondial Relay, 
+elle doit être appellée avant la librairie du Widget Mondial Relay.
+Le symbole "$" commençant une instruction javascript est caractéristique de l'utilisation de jQuery. -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- Librairie de Cartographie : Leaflet. -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- Widget MR -->
+    <script src="https://widget.mondialrelay.com/parcelshop-picker/jquery.plugin.mondialrelay.parcelshoppicker.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Zone dans laquelle le Widget est chargé -->
+    <div id="Zone_Widget"></div>
+
+    <div style="padding:8px; overflow:auto;">
+      <div style="background:#edffb2; border:solid 1px #a5f913; padding:5px; font-family:verdana; font-size:10px;">
+        <em>Cette zone n'est pas située dans le Widget mais bien dans la page appelante.</em><br/><br/>
+        <div style="display:inline-block; vertical-align:top;">
+
+          <!-- La balise ayant pour id "TargetDisplay_Widget" a été paramétrée pour reçevoir 
+          l'ID du Point Relais sélectionné -->
+          Point Relais Selectionné : <input type="text" id="TargetDisplay_Widget" /><br/>
+
+          <!-- Balise HTML avec id "Target_Widget", paramétrée pour reçevoir l'ID 
+          du Point Relais sélectionné -->
+          Hidden : <input type="text" id="Target_Widget" /><br/>
+
+          <!--Balise HTML avec id "TargetDisplayInfoPR_Widget" paramétrée pour recevoir 
+          l'adresse du Point Relais sélectionné -->
+          InfosPR : <span id="TargetDisplayInfoPR_Widget"></span>
+
+        </div>
+
+        <hr />
+
+        <div style="display:inline-block;">
+          <!-- Balises HTML utilisées dans la fonction de CallBack pour reçevoir des données à afficher -->
+          <div style="font-weight:bold;text-decoration:underline;">Callback zone</div><br/> 
+          <div>data.ID = <span id="cb_ID"></span></div>
+          <div>data.Nom = <span id="cb_Nom"></span></div>
+          <div>data.Adresse = <span id="cb_Adresse"></span></div>
+          <div>data.CP = <span id="cb_CP"></span></div>
+          <div>data.Ville = <span id="cb_Ville"></span></div>
+          <div>data.Pays = <span id="cb_Pays"></span></div>
+        </div>
+      </div>
+    </div>
+    <!-- script du code script pour le fonctionnement de l'application web  -->
+    <script src="index.js"></script>
+  </body>
+
+</html>

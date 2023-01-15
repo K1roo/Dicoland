@@ -717,14 +717,17 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    animation:5s;
 }
 
 .loader-container.active{
     display: none;
+    animation:5s;
 }
 
 .loader-container img{
-    height:10rem;
+    height:25rem;
+    animation:5s;
 }
 
 
