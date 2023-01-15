@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon/KOS1.png" type="image/png">
+    <title>King Of The Stream</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!-- FontAweome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+<img src="kos2.png" style="width:60%;">
+</body>
+</head>
+
+    <!-- Start KOS button -->
+    <div class="start_btn"><button>Lancer King Of The Stream</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Quelques règles de ce quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. Vous avez <span>15 secondes</span> pour repondre a chaque question.</div>
+            <div class="info">2. Vous ne pouvez pas quitter la partie pendant que vous jouez.</div>
+            <div class="info">3. Vous obtiendrez des points sur la base de vos bonnes réponses.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Quitter</button>
+            <button class="restart">Commencer</button>
+        </div>
+    </div>
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">King Of The Stream</div>
+            <div class="timer">
+                <div class="time_left_txt">Temps</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                   <!-- import/fetch/let d'info via notre JavaScript/JSON file -->
+            </div>
+            <div class="option_list">
+                <!-- ajoute de info via notre JavaScript/JSON file -->
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next</button>
+        </footer>
+    </div>
+
+    <!-- Result Box KOS -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">King of Thes Stream</div>
+        <div class="score_text">
+            <!-- Result/score JavaScript script -->
+        </div>
+        <div class="buttons">
+            <button href= "index2.html" class="restart">Rejouer</button>
+            <button class="quit">Quitter</button>
+        </div>
+    </div>
+    <!-- Notre fichier JSON/JS qui contient des questions and rep -->
+    <script src="includes/data2.js"></script>
+
+    <!-- script du code script pour le fonctionnement de l'application web  -->
+    <script src="includes/index2.js"></script>
+
+</body>
+</html>
+</html>
